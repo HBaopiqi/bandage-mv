@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf4e7">
+  <meta name="description" content="《绷带》——鹤我这豹脾气。一首关于成长、夜路与继续向前的歌，一部随歌词展开的手绘拼贴 MV。">
+  <title>绷带 · 鹤我这豹脾气</title>
+  <link rel="icon" href="assets/collage/heart.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="loading-home" id="loadingHome" aria-labelledby="loadingTitle">
+    <div class="loading-card">
+      <p class="loading-byline">鹤我这豹脾气 / 音乐手记</p>
+      <div class="loading-art"><span class="loading-orbit" aria-hidden="true"></span><h1 id="loadingTitle">绷<span>带</span></h1><span class="loading-star" aria-hidden="true">✳</span><span class="loading-tape">LET IT BREATHE</span></div>
+      <p class="loading-quote">不用催，路还远。<br><span>先把这段夜路装进口袋。</span></p>
+      <div class="load-meta"><span id="loadMessage" role="status" aria-live="polite">正在准备纸张、画面和音乐…</span><span id="loadPercent" aria-hidden="true">0%</span></div>
+      <div class="load-track" id="loadProgress" role="progressbar" aria-label="MV 加载进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="loadFill"></span></div>
+      <button class="enter-button" id="enterMV" disabled>正在准备…</button>
+      <button class="retry-button" id="retryLoad" hidden>重新加载</button>
+      <p class="loading-hint" id="loadHint">带上耳机，留一点空拍给自己。<br>手机横屏，画面更舒展。</p>
+    </div>
+    <p class="loading-footer">94 BPM <span>·</span> 路，我自己来。</p>
+  </section>
+  <main class="wrap" id="watchPage" hidden>
+    <header class="head">
+      <div class="title-block"><p class="eyebrow">鹤我这豹脾气 <span>的音乐手记</span></p><h1 class="brand">绷<span>带</span><i aria-hidden="true">✳</i></h1></div>
+      <div class="head-note"><span class="paper-label">LET IT BREATHE</span><p>把心事缠好，<br>再向前走一点。</p><span class="track-meta">94 BPM <b>·</b> 03:42</span></div>
+    </header>
+
+    <section class="player-paper" aria-label="音乐播放器">
+      <div class="player-top"><span><i aria-hidden="true"></i> 绷带 / 完整 MV</span><span>慢一点，路还远。</span></div>
+      <section id="screen" class="screen" aria-label="绷带完整手绘拼贴 MV">
+        <canvas id="film" width="1920" height="1080" aria-label="随歌词展开的手绘拼贴动画"></canvas>
+        <button class="start" id="start" disabled><span aria-hidden="true">▶</span>准备画面与音乐…</button>
+        <button class="exit" id="exit">退出全屏</button>
+      </section>
+      <div class="progress"><canvas id="wave" width="1400" height="42" aria-hidden="true"></canvas><input type="range" id="seek" aria-label="播放进度" min="0" max="221.76" step="0.01" value="0"></div>
+      <div class="controls">
+        <button id="play" disabled>加载中</button><button id="replay" aria-label="从头重播">↺ 重播</button>
+        <span class="clock"><span id="clock">00:00</span><span class="clock-divider"> / </span><span id="duration">03:42</span></span>
+        <span class="flex"></span><button id="mute">声音 开</button><button id="capture">保存画面</button><button id="full">全屏 ↗</button>
+      </div>
+      <div class="now"><span class="now-label">正在这一页</span><span id="sceneLabel">前奏 · 绷带</span></div>
+      <div class="player-bottom">
+        <label class="chapter-label">翻到 <select id="chapter" aria-label="选择歌曲段落"><option value="0">前奏</option></select></label>
+        <details class="settings"><summary>观看设置</summary><div class="tools"><label>动画 <select id="intensity"><option value="1">标准</option><option value="0.4">柔和</option></select></label><label>画面微调 <input type="number" id="sync" aria-label="画面同步微调毫秒" min="-500" max="500" step="10" value="0"> ms</label><p>空格暂停／播放，方向键前后移动。手机横屏观看，画面更舒展。</p></div></details>
+      </div>
+      <p id="status" role="status">正在准备画面与音乐…</p>
+    </section>
+
+    <footer class="note"><div><p class="note-kicker">给每一个还在路上的人</p><p class="closing">路——<br><span>我自己来。</span></p><p class="credit">作者 / 鹤我这豹脾气</p></div><img src="assets/collage/sneaker.webp" alt="一只走在路上的手绘运动鞋" width="280" height="180" loading="lazy"></footer>
+    <audio id="audio" data-src="assets/bandage.mp3" preload="auto"></audio>
+    <button id="record" hidden tabindex="-1" aria-hidden="true">导出视频</button>
+    <div id="qa" hidden></div>
+  </main>
+  <noscript><p class="noscript">请在浏览器中启用 JavaScript，以加载和播放这部 MV。</p></noscript>
+  <script src="loading.js"></script><script src="assets/full-timing.js"></script><script src="assets/full-lyrics.js"></script><script src="assets/vendor/rough.js"></script><script src="collage.js"></script><script src="art.js"></script><script src="player.js"></script>
+</body>
+</html>
