@@ -1,0 +1,4 @@
+dist/** linguist-vendored=false linguist-generated=false
+dist/assets/vendor/** linguist-vendored=true
+dist/assets/full-lyrics.js linguist-generated=true
+dist/assets/full-timing.js linguist-generated=true
