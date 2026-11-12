@@ -8,7 +8,7 @@
 
 94 BPM · 03:42 · Canvas Kinetic Typography
 
-[▶ GitHub Pages 在线播放](https://hbaopiqi.github.io/bandage-mv/)　·　[Sites 镜像](https://bandage-mv.hbaopiqi.chatgpt.site)
+[▶ GitHub Pages 在线播放](https://hbaopiqi.github.io/bandage-mv/)　·　[Sites 镜像](https://bandage-mv.hbaopiqi.chatgpt.site)　·　[网易云收听专辑](https://music.163.com/#/album?id=401417845)
 
 </div>
 
@@ -26,6 +26,7 @@
 | --- | --- | --- |
 | GitHub Pages | [打开完整 MV](https://hbaopiqi.github.io/bandage-mv/) | 本仓库自动部署 |
 | Sites | [打开镜像站点](https://bandage-mv.hbaopiqi.chatgpt.site) | 独立托管镜像 |
+| 网易云音乐 | [收听《绷带》专辑](https://music.163.com/#/album?id=401417845) | 专辑收听入口 |
 
 建议佩戴耳机观看。首次点击进入后，浏览器才会开始播放音乐。电脑端可以全屏观看；手机端建议横屏。
 

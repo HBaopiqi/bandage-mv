@@ -47,3 +47,5 @@ body.mv-full{overflow:hidden}body.mv-full .screen{position:fixed;inset:0;width:1
 @media(prefers-reduced-motion:reduce){.load-track>span{transition:none}}
 @media(max-width:720px){.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 6px}.controls .clock{text-align:right;margin:0;font-size:11px}.controls #mute,.controls #capture{margin:0}.controls button{width:100%}.controls #play{min-width:0}}
 @media(max-width:360px){.loading-star{right:-5px;top:-3px;font-size:33px}}
+
+.album-actions{margin:14px 0 0;font-size:13px;line-height:1.6;letter-spacing:0}.album-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid #4053d84d;background:#fffcf5;color:var(--blue);text-decoration:none;border-radius:2px}.album-link:hover{background:#e9ebfb}.head-note .album-actions{margin:12px 0 0;font-size:13px;letter-spacing:0}.loading-album{margin-top:12px}@media(max-height:580px) and (orientation:landscape){.loading-album{grid-column:2;margin-top:10px}}
