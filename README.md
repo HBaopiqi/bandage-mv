@@ -1,77 +1,78 @@
+[简体中文](README.zh-CN.md) · [English](README.md) · [日本語](README.ja.md)
+
 <div align="center">
 
-[![《绷带》横版封面](docs/cover-bandage-4x3.png)](https://hbaopiqi.github.io/bandage-mv/)
+[![Bandage cover](docs/cover-bandage-4x3.png)](https://hbaopiqi.github.io/bandage-mv/)
 
-# 绷带
+# Bandage / 绷带
 
-**鹤我这豹脾气 · 手绘拼贴文字动画 MV**
+**HBaopiqi · 鹤我这豹脾气 — a hand-drawn collage and kinetic typography music video**
 
 94 BPM · 03:42 · Canvas Kinetic Typography
 
-[▶ GitHub Pages 在线播放](https://hbaopiqi.github.io/bandage-mv/)　·　[Sites 镜像](https://bandage-mv.hbaopiqi.chatgpt.site)　·　[网易云收听专辑](https://music.163.com/#/album?id=401417845)
+[▶ Watch on GitHub Pages](https://hbaopiqi.github.io/bandage-mv/) · [Sites mirror](https://bandage-mv.hbaopiqi.chatgpt.site) · [Listen on NetEase Cloud Music](https://music.163.com/#/album?id=401417845)
 
 </div>
 
-> 不用催，路还远。那些一圈又一圈缠上的绷带，是为了提醒自己曾经怎样一路走到这里。
+> There is no need to rush; the road is still long. Each layer of bandage is a reminder of everything it took to get this far.
 
-## 作品简介
+## About the work
 
-《绷带》写的是一个人在成长途中，学会与焦虑、失败和未愈合的伤口相处。凌晨的街、没回的消息、走得比自己更快的人，都曾让方向变得模糊。
+*Bandage* follows a person learning to live with anxiety, failure, and wounds that have yet to heal. Streets before dawn, unanswered messages, and people who seem to move faster can all make the way ahead feel uncertain.
 
-这部网页 MV 以歌词为分镜，以鼓点和留白控制运动节奏。背包、旧帆布鞋、手机、心脏与绷带在撕纸、蜡笔和手绘线条之间反复出现；文字不只是字幕，也会成为道路、座椅、口袋和伤口。路还很长，答案可以晚一点出现，只要还愿意向前走，就还没有终点。
+This browser-based music video uses its lyrics as a storyboard, with drumbeats and pauses shaping the rhythm of movement. Backpacks, worn canvas shoes, phones, hearts, and bandages recur through torn paper, crayon textures, and hand-drawn lines. Words become roads, seats, pockets, and wounds as well as captions. The road is long, and answers can come later; as long as you keep moving, the journey continues.
 
-## 在线观看
+The song and on-screen lyrics are in Chinese.
 
-| 入口 | 地址 | 说明 |
+## Watch online
+
+| Platform | Link | Details |
 | --- | --- | --- |
-| GitHub Pages | [打开完整 MV](https://hbaopiqi.github.io/bandage-mv/) | 本仓库自动部署 |
-| Sites | [打开镜像站点](https://bandage-mv.hbaopiqi.chatgpt.site) | 独立托管镜像 |
-| 网易云音乐 | [收听《绷带》专辑](https://music.163.com/#/album?id=401417845) | 专辑收听入口 |
+| GitHub Pages | [Watch the complete music video](https://hbaopiqi.github.io/bandage-mv/) | Automatically deployed from this repository |
+| Sites | [Open the mirror](https://bandage-mv.hbaopiqi.chatgpt.site) | Independently hosted mirror |
+| NetEase Cloud Music | [Listen to the Bandage album](https://music.163.com/#/album?id=401417845) | Album listening page |
 
-建议佩戴耳机观看。首次点击进入后，浏览器才会开始播放音乐。电脑端可以全屏观看；手机端建议横屏。
+Headphones are recommended. Music starts only after you click to enter, as required by browser playback rules. Fullscreen is available on desktop; landscape orientation is recommended on mobile.
 
-## 画面与动效
+## Visuals and animation
 
-![《绷带》MV 关键画面](docs/mv-keyframes.png)
+![Keyframes from the Bandage music video](docs/mv-keyframes.png)
 
-- 歌词逐句对齐完整音频时间轴，段落与重拍触发动效变化
-- 手绘、蜡笔、撕纸与拼贴素材贯穿整首歌曲
-- 字号、字距、构图和运动方向跟随歌词情绪变化
-- 加载首页、章节跳转、进度拖动、画面保存与全屏播放
-- 适配桌面浏览器和手机横屏，支持触控播放控制
+- Lyrics synchronized line by line with the complete audio timeline; sections and strong beats trigger animation changes
+- Hand drawing, crayons, torn paper, and collage throughout the song
+- Type size, letter spacing, composition, and movement responding to the mood of each lyric
+- A loading screen, section selection, seeking, frame saving, and fullscreen playback
+- Desktop and mobile landscape layouts, with touch playback controls
 
-## 观看控制
+## Playback controls
 
-| 功能 | 电脑 | 手机 |
+| Action | Desktop | Mobile |
 | --- | --- | --- |
-| 播放 / 暂停 | 播放按钮或空格键 | 播放按钮 |
-| 前后移动 | 左右方向键或拖动进度条 | 拖动进度条 |
-| 选择段落 | “翻到”菜单 | “翻到”菜单 |
-| 全屏观看 | 全屏按钮 | 全屏按钮并横屏 |
-| 保存画面 | “保存画面”按钮 | 长按保存生成的画面 |
+| Play / pause | Play button or Space | Play button |
+| Seek backward / forward | Left / right arrow keys or drag the progress bar | Drag the progress bar |
+| Choose a section | “翻到” (jump to) menu | “翻到” (jump to) menu |
+| Fullscreen | Fullscreen button | Fullscreen button, then rotate to landscape |
+| Save a frame | “保存画面” (save frame) button | Press and hold the generated image to save it |
 
-## 技术实现
+## Implementation
 
-项目使用原生 HTML、CSS 与 JavaScript 构建，不依赖前端框架。Canvas 负责逐帧绘制文字、图形和拼贴素材；音频时间作为唯一主时钟，驱动歌词、转场和场景动画。全部字体、歌词时间轴与视觉素材随仓库一同发布。
+The project uses plain HTML, CSS, and JavaScript without a frontend framework. Canvas draws the text, shapes, and collage assets frame by frame. Audio playback time is the single master clock driving lyrics, transitions, and scene animation. Fonts, lyric timing data, and visual assets are included in the repository.
 
 ```text
 dist/
-├─ index.html              网站入口与播放器结构
-├─ styles.css              页面、加载页与移动端适配
-├─ loading.js              资源预载与进入流程
-├─ player.js               音频控制和时间轴驱动
-├─ art.js                  逐幕动画与文字排版
-├─ collage.js              拼贴素材调度
-└─ assets/                 音频、歌词、字体与画面素材
+├─ index.html              Entry page and player structure
+├─ styles.css              Page, loading screen, and mobile layouts
+├─ loading.js              Asset preloading and entry flow
+├─ player.js               Audio controls and timeline playback
+├─ art.js                  Scene animation and typography
+├─ collage.js              Collage asset coordination
+└─ assets/                 Audio, lyrics, fonts, and visual assets
 ```
 
-## 本地运行
+## Run locally
 
 ```bash
 python -m http.server 8768 --directory dist
 ```
 
-打开 <http://127.0.0.1:8768/> 即可观看。项目不需要后端，也不需要安装依赖。
-
-
-
+Open <http://127.0.0.1:8768/> to watch. No backend application or dependency installation is required.
